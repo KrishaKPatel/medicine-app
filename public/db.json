@@ -1,0 +1,72 @@
+{"Medicine": [{
+  "id":1,
+  "name": "Acetaminophen",
+  "price": 10,
+  "quantity": 100,
+  "stock":30,
+  "Expiry-date": "2025-11-23"
+},
+{
+  "id":2,
+  "name": "Dolo",
+  "price": 19,
+  "quantity": 1000,
+  "stock": 500,
+  "Expiry-date": "2026-01-03"
+},
+{
+  "id":3,
+  "name": "Entresto",
+  "price": 23,
+  "quantity": 40,
+  "stock":10,
+  "Expiry-date": "2024-12-31"
+},
+{
+  "id":4,
+  "name": "Metformin",
+  "price": 15,
+  "quantity": 70,
+  "stock":10,
+  "Expiry-date": "2024-12-25"
+},
+{
+  "id":5,
+  "name": "AViagra",
+  "price": 10,
+  "quantity": 80,
+  "stock":1,
+  "Expiry-date": "2025-04-11"
+},
+{
+  "id":6,
+  "name": "Terazosin 5Mg Caps",
+  "price": 30,
+  "quantity": 114,
+  "stock":100,
+  "Expiry-date": "2026-12-26"
+},{
+  "id":7,
+  "name": "Albuterol 2mg tabn",
+  "price": 15,
+  "quantity": 100,
+  "stock":20,
+  "Expiry-date": "2026-11-29"
+},
+{
+  "id":8,
+  "name": "Glipizide 5mg tab",
+  "price": 7,
+  "quantity": 200,
+  "stock": 0,
+  "Expiry-date": "2026-01-23"
+},
+{
+  "id":9,
+  "name": "Ranitidine 300mg tab",
+  "price": 600,
+  "quantity": 40,
+  "stock":8,
+  "Expiry-date": "2025-02-01"
+}
+]}
