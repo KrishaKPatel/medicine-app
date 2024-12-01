@@ -1,17 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medicine App</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but the Medicine App doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- The Vue app will be injected here -->
-    <h1>This is home Page</h1> 
-  </body>
+    <link rel="stylesheet" href="style.css">
+    <title>Krisha Portfolio</title>
+</head>
+<body>
+    <div class="Parent">
+        <header>
+            <nav id="nav">
+                <button class="hamburger" onclick="onHandleClick()">☰</button>
+                <div class="Child1" id="myheader">
+                    <p><a href="#About">About</a></p>
+                    <p><a href="#Skills">Skills</a></p>
+                    <p><a href="#Experience">Experience</a></p>
+                    <p><a href="#Educations">Educations</a></p>
+                    <p><a href="#Projects">Projects</a></p>
+                    <p><a href="#Blogs">Blogs</a></p>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="About" class="Child2">
+                <div class="logo">
+                    <img src="./assets/pic.jpg" alt="">
+                </div>
+                <div class="About">
+                    <p class="name">KRISHA PATEL</p>
+                    <p class="position">Full-Stack Developer</p>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis urna in diam rhoncus faucibus. Nam dictum a lorem in rhoncus. Donec non convallis est. Ut fringilla maximus nibh vitae consectetur. Nulla vel nunc sem. Phasellus nec orci sit amet turpis rhoncus commodo. Quisque mattis felis nec ligula tempor pharetra eget nec erat. Proin vehicula, ex eget ultricies tincidunt, mauris mi interdum ipsum, ac ultrices nulla ex in quam. Donec lobortis sem sapien, eget mollis sem posuere iaculis. Mauris pharetra vel ex a posuere. Sed sagittis, sem at interdum pharetra, enim ipsum suscipit lorem, ut interdum felis lectus eget ante. </p>
+                </div>
+            </section>
+            <section id="Skills" class="Skills">
+                <p class="title">Skills</p>
+                <div class="no">
+                    <p>Python</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Java</p>
+                    <p>AWS</p>
+                    <p>JavaScript</p>
+                    <p>Docker</p>
+                    <p>React.js</p>
+                    <p>Next.js</p>
+                    <p>JQuery</p>
+                    <p>Node.js</p>
+                    <p>PostgreSQL</p>
+                    <p>MongoDB</p>
+                    <p>Github</p>
+                    <p>SQL</p>
+                    <p>Canva</p>
+                </div>
+            </section>
+            <section class="ex">
+                <section id="Experience" class="div1">
+                    <p class="title">Experience</p>
+                    <div class="exp1">
+                        <p class="comp">
+                            Full-stack Developer - Tera Innovators
+                        </p>
+                        <p class="details">
+                            Lorem ipsum odor amet, consectetuer adipiscing elit. Proin montes per lacinia venenatis eleifend velit quis, litora tempor. Sollicitudin rhoncus leo scelerisque interdum placerat pellentesque senectus mus. Et mi natoque iaculis pharetra nunc. Lacus praesent parturient venenatis sollicitudin volutpat cras. 
+                        </p>
+                    </div>
+                </section>
+                <section id="Educations" class="div2">
+                    <p class="title">Educations</p>
+                    <div class="edudetails">
+                        <p class="univ">
+                            University of New Haven
+                        </p>
+                        <p class="edu">
+                            Master's in Computer Scinece
+                        </p>
+                    </div>
+                    <div class="edudetails">
+                        <p class="univ">
+                            Gujarat Technological University
+                        </p>
+                        <p class="edu">
+                            Master's in Computer Scinece
+                        </p>
+                    </div>
+                    <div class="edudetails">
+                        <p class="univ">
+                            University of Gujarat
+                        </p>
+                        <p class="edu">
+                            Bachelor's in Computer Scinece
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <section id="Projects" class="Projects">
+                <p class="title">Projects</p>
+                <div class="pro">
+                    <div class="div1" id="p1">
+                        <p class="comp">Space-writing</p>
+                        <p class="details">
+                            Lorem ipsum odor amet, consectetuer adipiscing elit. Proin montes per lacinia venenatis eleifend velit quis, litora tempor. Sollicitudin rhoncus leo scelerisque interdum placerat pellentesque senectus mus. Et mi natoque iaculis pharetra nunc. Lacus praesent parturient venenatis sollicitudin volutpat cras. 
+                        </p>
+                    </div>
+                    <div class="div1" id="dd">
+                        <p class="comp">Delish Dairies</p>
+                        <p class="details">
+                            Lorem ipsum odor amet, consectetuer adipiscing elit. Proin montes per lacinia venenatis eleifend velit quis, litora tempor. Sollicitudin rhoncus leo scelerisque interdum placerat pellentesque senectus mus. Et mi natoque iaculis pharetra nunc. Lacus praesent parturient venenatis sollicitudin volutpat cras. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="Blogs" class="Blogs">
+                <p class="title">Blogs</p>
+                <div id="blog">
+                    <div id= "class1" class="b1">
+                        <img src="assets/blog3.jpeg" alt="" class="photo">
+                        <p class="bdetails">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt sollicitudin ligula, dapibus fermentum sapien malesuada nec. Vivamus metus risus, tempor a nibh et, efficitur sagittis felis. Sed ut odio vel libero malesuada aliquet. Vestibulum tristique tortor at nunc mattis, ut rutrum felis facilisis. Nulla ultrices diam viverra dolor vehicula sollicitudin. 
+                        </p>
+                    </div>
+                    <div class="b1" id="class2">
+                        <img src="assets/blog4.jpeg" alt="" class="photo">
+                        <p class="bdetails">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt sollicitudin ligula, dapibus fermentum sapien malesuada nec. Vivamus metus risus, tempor a nibh et, efficitur sagittis felis. Sed ut odio vel libero malesuada aliquet. Vestibulum tristique tortor at nunc mattis, ut rutrum felis facilisis. Nulla ultrices diam viverra dolor vehicula sollicitudin. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <img src="assets/twitter.png" alt="" class="logo1">
+        <img src="assets/facebooklogo.png" alt="" class="logo1">
+        <img src="assets/linkedin.png" alt="" class="logo1">
+        <img src="assets/phonelogo.png" alt="" class="logo1">
+        <img src="assets/wplogo.png" alt="" class="logo1">
+        <img src="assets/gmaillogo.png" alt="" class="logo1">
+        <img src="assets/githublogo.png" alt="" class="logo1">
+    </footer>
+</div>
+
+<script>
+    function onHandleClick() {
+        var navbar = document.getElementById("myheader");
+        if (navbar.className === "Child1") {
+            navbar.className += " responsive";
+        }
+            else {
+            navbar.className = "Child1";
+        }
+    }
+</script>
+</body>
 </html>
