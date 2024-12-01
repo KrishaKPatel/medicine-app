@@ -2,6 +2,7 @@ const http = require("http");
 const path = require("path");
 const fs = require("fs");
 const { MongoClient } = require('mongodb');
+const cors = require('cors');  // Import cors
 
 // MongoDB connection URI
 const uri = "mongodb+srv://KrishaPatel:Kishu1104@cluster0.zgong.mongodb.net/Pharmacy?retryWrites=true&w=majority";
@@ -30,6 +31,11 @@ async function findMedicines() {
 }
 
 const server = http.createServer(async (req, res) => {
+  // CORS headers for every request
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Allow all origins, you can specify domains if needed
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Allowed methods
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Allowed headers
+
   if (req.url === "/") {
     // Serve the index.html file
     fs.readFile(path.join(__dirname, "public", "index.html"), (err, content) => {
