@@ -24,7 +24,7 @@
         <main>
             <section id="About" class="Child2">
                 <div class="logo">
-                    <img src="./assets/pic.jpg" alt="">
+                    <img src="/assets/pic.jpg" alt="">
                 </div>
                 <div class="About">
                     <p class="name">KRISHA PATEL</p>
@@ -114,13 +114,13 @@
                 <p class="title">Blogs</p>
                 <div id="blog">
                     <div id= "class1" class="b1">
-                        <img src="assets/blog3.jpeg" alt="" class="photo">
+                        <img src="/assets/blog3.jpeg" alt="" class="photo">
                         <p class="bdetails">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt sollicitudin ligula, dapibus fermentum sapien malesuada nec. Vivamus metus risus, tempor a nibh et, efficitur sagittis felis. Sed ut odio vel libero malesuada aliquet. Vestibulum tristique tortor at nunc mattis, ut rutrum felis facilisis. Nulla ultrices diam viverra dolor vehicula sollicitudin. 
                         </p>
                     </div>
                     <div class="b1" id="class2">
-                        <img src="assets/blog4.jpeg" alt="" class="photo">
+                        <img src="/assets/blog4.jpeg" alt="" class="photo">
                         <p class="bdetails">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt sollicitudin ligula, dapibus fermentum sapien malesuada nec. Vivamus metus risus, tempor a nibh et, efficitur sagittis felis. Sed ut odio vel libero malesuada aliquet. Vestibulum tristique tortor at nunc mattis, ut rutrum felis facilisis. Nulla ultrices diam viverra dolor vehicula sollicitudin. 
                         </p>
@@ -129,13 +129,13 @@
             </section>
     </main>
     <footer class="footer">
-        <img src="assets/twitter.png" alt="" class="logo1">
-        <img src="assets/facebooklogo.png" alt="" class="logo1">
-        <img src="assets/linkedin.png" alt="" class="logo1">
-        <img src="assets/phonelogo.png" alt="" class="logo1">
-        <img src="assets/wplogo.png" alt="" class="logo1">
-        <img src="assets/gmaillogo.png" alt="" class="logo1">
-        <img src="assets/githublogo.png" alt="" class="logo1">
+        <img src="/assets/twitter.png" alt="" class="logo1">
+        <img src="/assets/facebooklogo.png" alt="" class="logo1">
+        <img src="/assets/linkedin.png" alt="" class="logo1">
+        <img src="/assets/phonelogo.png" alt="" class="logo1">
+        <img src="/assets/wplogo.png" alt="" class="logo1">
+        <img src="/assets/gmaillogo.png" alt="" class="logo1">
+        <img src="/assets/githublogo.png" alt="" class="logo1">
     </footer>
 </div>
 
@@ -147,6 +147,13 @@
         }
             else {
             navbar.className = "Child1";
+        }
+        // Reset the navbar to normal when the window is resized
+        window.onresize = function() {
+            var navbar = document.getElementById("myheader");
+            if (window.innerWidth > 500) {  
+                navbar.className = "Child1";  
+            }
         }
     }
 </script>
